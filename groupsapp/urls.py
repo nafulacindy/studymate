@@ -1,12 +1,8 @@
-from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import StudyGroupViewSet, StudyGroupMembershipViewSet, GroupMessageViewSet
+from .views import StudyGroupViewSet, GroupMessageViewSet
 
 router = DefaultRouter()
-router.register('groups', StudyGroupViewSet, basename='groups')
-router.register('memberships', StudyGroupMembershipViewSet, basename='memberships')
-router.register('messages', GroupMessageViewSet, basename='messages')
+router.register(r'groups', StudyGroupViewSet)
+router.register(r'messages', GroupMessageViewSet)
 
-urlpatterns = [
-    path('', include(router.urls)),
-]
+urlpatterns = router.urls

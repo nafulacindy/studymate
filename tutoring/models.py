@@ -9,6 +9,7 @@ class TutoringSession(models.Model):
         ('confirmed', 'Confirmed'),
         ('completed', 'Completed'),
         ('cancelled', 'Cancelled'),
+        ('scheduled', 'Scheduled'),
     )
     tutor = models.ForeignKey(User, on_delete=models.CASCADE, related_name='tutor_sessions')
     student = models.ForeignKey(User, on_delete=models.CASCADE, related_name='student_sessions')

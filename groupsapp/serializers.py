@@ -5,7 +5,7 @@ class StudyGroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudyGroup
         fields = ['id', 'name', 'subject', 'created_by', 'members']
-        read_only_fields = ['id']
+        read_only_fields = ['id', 'created_by', 'members']
 
 class StudyGroupMembershipSerializer(serializers.ModelSerializer):
     class Meta:
@@ -13,8 +13,11 @@ class StudyGroupMembershipSerializer(serializers.ModelSerializer):
         fields = ['id', 'study_group', 'user', 'joined_at']
         read_only_fields = ['id', 'joined_at']
 
+
+
 class GroupMessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = GroupMessage
         fields = ['id', 'group', 'sender', 'content', 'timestamp']
-        read_only_fields = ['id', 'timestamp']
+        read_only_fields = ['id', 'sender', 'timestamp']
+
