@@ -33,7 +33,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
-ALLOWED_HOSTS = ["https://studymate-ehuh.onrender.com/", 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ["studymate-ehuh.onrender.com/", 'localhost', '127.0.0.1']
 
 
 
