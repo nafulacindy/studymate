@@ -57,8 +57,8 @@ This project was developed as part of my backend development program to demonstr
 
 ```json
 {
-  "username": "student1",
-  "email": "student1@example.com",
+  "username": "Stella",
+  "email": "stella@example.com",
   "password": "password123"
 }
 ```
@@ -68,7 +68,7 @@ This project was developed as part of my backend development program to demonstr
 
 ```json
 {
-  "username": "student1",
+  "username": "stella",
   "password": "password123"
 }
 ```
@@ -108,8 +108,8 @@ This project was developed as part of my backend development program to demonstr
 
 ```json
 {
-  "name": "Physics Enthusiasts",
-  "subject": "Physics"
+  "name": "Swahili Enthusiasts",
+  "subject": "swahili"
 }
 ```
 
@@ -144,7 +144,7 @@ This project was developed as part of my backend development program to demonstr
 
 ```json
 {
-  "group": 1,
+  "group": 7,
   "content": "Hey team, shall we revise chapter 5 tomorrow?"
 }
 ```
@@ -199,9 +199,13 @@ This project was developed as part of my backend development program to demonstr
 
 ```json
 {
-  "topic": "Calculus Basics",
-  "date": "2025-09-05T14:00:00Z",
-  "status": "scheduled"
+  
+  "subject": "Calculus Basics",
+  "date_time": "2025-09-05T14:00:00Z",
+  "status": "scheduled",
+  "tutor": 1,
+  "student": 3
+
 }
 ```
 
@@ -209,10 +213,12 @@ This project was developed as part of my backend development program to demonstr
 
 ```json
 {
-  "id": 3,
-  "topic": "Calculus Basics",
-  "date": "2025-09-05T14:00:00Z",
+  
+  "subject": "Calculus Basics",
+  "date_time": "2025-09-05T14:00:00Z",
   "status": "scheduled",
+  "tutor": 1,
+  "student": 3,
   "created_by": 1
 }
 ```
