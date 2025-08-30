@@ -19,7 +19,6 @@ import environ
 env = environ.Env()
 SECRET_KEY = env('SECRET_KEY')
 DEBUG = env.bool('DEBUG', default=False)
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['.onrender.com'])
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -34,6 +33,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 ALLOWED_HOSTS = ["studymate-ehuh.onrender.com/", 'localhost', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ["https://studymate-ehuh.onrender.com"]
+
 
 
 
