@@ -280,7 +280,17 @@ This project was developed as part of my backend development program to demonstr
 ## 🔗 Links
 
 * **GitHub Repo:** \(https://github.com/nafulacindy/studymate.git)
-* **Demo Video:** \[Your Loom Video Link Here]
+* **Demo Video:** \(https://www.loom.com/share/91710068d86749518ef13b6ddc1bcb61?sid=d61c9770-b6a9-4447-b3d0-cb42dfe0b6f6)
+
+* **Live Demo:**
+The project is deployed and can be accessed here: [StudyMate Live](https://studymate-ehuh.onrender.com/)
+
+You can test the APIs directly via the live endpoints, for example:
+
+- **Register:** `POST /api/accounts/register/`
+- **Obtain Token:** `POST /api/accounts/token/`
+- **Refresh Token:** `POST /api/accounts/token/refresh/`
+- **Groups API:** `GET /api/groups/groups/`  *(requires authentication)*
 
 ---
 
